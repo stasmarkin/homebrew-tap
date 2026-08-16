@@ -1,25 +1,25 @@
 class Nyetdb < Formula
   desc "Read-only database access for AI agents. Your agent can look; for everything else — nyet."
   homepage "https://github.com/stasmarkin/nyetdb"
-  version "0.3.0"
+  version "0.3.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/stasmarkin/nyetdb/releases/download/v0.3.0/nyetdb-aarch64-apple-darwin.tar.xz"
-      sha256 "514c7278489c61d107af0ad6ced7686a483c040ac0acd6cf73485d140a1bbde9"
+      url "https://github.com/stasmarkin/nyetdb/releases/download/v0.3.1/nyetdb-aarch64-apple-darwin.tar.xz"
+      sha256 "d67dfd8e3b3d45e6e3c28e87b818bbd312635dec26789abb8c6b0d758c07d018"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stasmarkin/nyetdb/releases/download/v0.3.0/nyetdb-x86_64-apple-darwin.tar.xz"
-      sha256 "1ff93c1a6844be194abf56b499d87ec5caeb38d209a3b677fdc988cf2a7da9f9"
+      url "https://github.com/stasmarkin/nyetdb/releases/download/v0.3.1/nyetdb-x86_64-apple-darwin.tar.xz"
+      sha256 "50e92a0f77f7799fd0e00777d7a8430909eaad0166f446b0b16e12d711be1538"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stasmarkin/nyetdb/releases/download/v0.3.0/nyetdb-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ea65b7e6285efd9e18357312c635bc57ffceb63fac5e5a12b1f45b72b2c9c24f"
+      url "https://github.com/stasmarkin/nyetdb/releases/download/v0.3.1/nyetdb-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e874f87ea20dc586bcdf334f219ba98704da3537c89f784032547437323b96c6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stasmarkin/nyetdb/releases/download/v0.3.0/nyetdb-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "277f9d043b08cc50c52e4fd1db7178fe399d7c273da4bc14c1263766cc2af718"
+      url "https://github.com/stasmarkin/nyetdb/releases/download/v0.3.1/nyetdb-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "037fba6b9fdbc846ed3278fbb726ecde43201b0676c5f06887ed50b570a04422"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
